@@ -1,0 +1,126 @@
+body{
+ background: #f0f5f5; 
+}
+
+.container {
+    width: 95%;
+    margin: 30px auto;
+    > h1{
+        margin: 10px 0px;
+    }
+    > p{
+        margin: 10px 0;
+    }
+}
+.card {
+    display: flex;
+    background: white;
+    border-left: 12px solid #3AEBB6;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 12px -8px rgba(0,0,0,0.68);
+
+}
+.date-time {
+    flex: 3;
+    padding: 20px 25px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    span{
+        padding-bottom: 10px;
+        p:first-child{
+            padding-bottom: 3px;
+        }
+    }
+    span:last-child{
+        padding: 0;
+        font-weight: 500;
+    }
+}
+.hr {
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .gray-hr{
+        width: 2px;
+        background: lightgray;
+        height: 100%;
+    }
+}
+.MuiSvgIcon-root{
+    font-size: 15px !important;
+}
+.addresses {
+    flex: 5;
+    padding: 20px 25px 20px 0;
+    .comment {
+        p:first-child{
+            font-weight: 500;
+        }
+        p:last-child{
+            padding: 10px 0;
+            font-size: 10px !important;
+        }
+    }
+    .address p:first-child {
+        padding-bottom: 2px;
+        width: 200px;
+        line-height: 1.3;
+    
+    }
+}
+.buttons {
+    flex: 2;
+    padding: 20px 25px 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .decline-btn button{
+        background: #fff;
+        border: 2px solid black;
+        padding: 6px;
+        font-size: 14px;
+        width: 78px;
+        cursor: pointer;
+    }
+    .apply-btn{
+        margin-left: 12px;
+        button{
+            background:#333333;
+            border:none;
+            color: #fff;
+            padding: 8px;
+            font-size: 14px;
+            width: 78px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.weekbar {
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+    margin: auto;
+    align-items: center;
+    .weeks{
+        h2{
+            font-weight: 600;
+        }
+    }
+    .icon-left, .icon-right{
+        box-shadow: 0px 0px 12px -8px rgba(0,0,0,0.68);
+        padding: 0 7px;
+        cursor: pointer;
+
+        > .MuiSvgIcon-root{
+            font-size:40px !important;
+        }
+    }
+}
